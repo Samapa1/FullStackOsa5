@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer abcdefg
+
+{"title": "Java2",
+ "author": "SP",
+ "url": "http://localhost:3003/api/blogs/java2",
+ "likes": 0,
+ "userId": "666c32ff2f11bc20f1350dee"
+}
+
