@@ -1,0 +1,19 @@
+/* .button-text {
+    display: inline-flex;
+  } */
+
+  .messagestyle {
+    color: rgb(58, 83, 58);
+    background: rgb(201, 246, 240);
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .messagestyle.error {
+    color: rgb(226, 11, 11);
+    background: rgb(250, 212, 219);
+  }
+  
