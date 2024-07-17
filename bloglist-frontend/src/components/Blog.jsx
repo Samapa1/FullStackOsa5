@@ -38,7 +38,7 @@ const Blog = ({ blog, user, likeBlog, removeBlog }) => {
         <p>{blog.title} {blog.author} <button onClick={() => setDetails(true)}>view</button></p>
       </div>
       <div style={{ ...showWhenDetails, ...blogStyle }} className="expanded">
-        <p>{blog.title} {blog.author}<button onClick={() => setDetails(false)}>hide</button></p>
+        <p>{blog.title} {blog.author} <button onClick={() => setDetails(false)}>hide</button></p>
         <p>{blog.url}</p>
         <p>likes: {blog.likes} <button onClick={() => {updateBlog()}}>like</button></p>
         <p>{blog.user.name}</p>
