@@ -12,11 +12,6 @@ const getAll = async () => {
   return response.data
 }
 
-// const getAll = () => {
-//   const request = axios.get(baseUrl)
-//   return request.then(response => response.data)
-// }
-
 const create = async newObject => {
   const config = {
     headers: { Authorization: token },
@@ -37,9 +32,7 @@ const remove = async (id)  => {
   const config = {
     headers: { Authorization: token },
   }
-  // console.log(id)
   const response = await axios.delete(`${baseUrl}/${id}`, config)
-  // console.log(response.data)
   return response.data
 }
 

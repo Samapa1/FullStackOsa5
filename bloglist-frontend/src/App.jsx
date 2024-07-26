@@ -15,14 +15,6 @@ const App = () => {
   const blogFormRef = useRef()
   const [notification, setNewNotification] = useState({ data:null, type:'info' })
 
-  // useEffect(() => {
-  //   async function fetchBlogs() {
-  //     const blogs = await blogService.getAll()
-  //     setBlogs(blogs.sort(sortBlogs))
-  //   }
-  // }, [])
-
-
   useEffect(() => {
     blogService.getAll().then(blogs =>
       setBlogs(blogs.sort(sortBlogs))
@@ -131,7 +123,6 @@ const App = () => {
               type="password"
               value={password}
               name="Password"
-              // onChange={(event) => setPassword(event.target.value)}
               onChange={({ target }) => setPassword(target.value)}
             />
           </div>

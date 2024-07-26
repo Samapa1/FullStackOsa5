@@ -18,10 +18,6 @@ test('renders title and author', () => {
 
   const div2 = container.querySelector('.expanded')
   expect(div2).toHaveStyle('display: none')
-  //   expect(div).toHaveTextContent(
-  //     'Testing the application Tester'
-  //   )
-
 
   screen.debug()
 })
@@ -37,10 +33,6 @@ test('when the button is clicked also url, likes and user are shown', async () =
 
   const { container } = render(<Blog blog={blog} user={blog.user} />)
 
-  //   const div = container.querySelector('.hidden')
-
-  //   const button = container.querySelector('button')
-
   const user = userEvent.setup()
   const button = screen.getByText('view')
   await user.click(button)
@@ -52,32 +44,6 @@ test('when the button is clicked also url, likes and user are shown', async () =
   expect(div2).not.toHaveStyle('display: none')
 
   screen.debug()
-
-  //   expect(div).toHaveTextContent(
-  //     'Testing the application Tester'
-  //   )
-  //   expect(div).toHaveTextContent(
-  //     'www.testworld.com'
-  //   )
-  //   expect(div).toHaveTextContent(
-  //     'likes: 0'
-  //   )
-  //   expect(div).toHaveTextContent(
-  //     'Testaaja'
-  //   )
-  //   screen.debug()
-
-  //   render(
-  //     <Blog blog={blog} user={blog.user} />
-  //   )
-
-  //   const user = userEvent.setup()
-  //   const button = screen.getByText('view')
-  //   await user.click(button)
-
-  //   const element = screen.getAllByText('www.testworld.com')
-  //   screen.debug()
-  //   expect(element).toBeDefined()
 
 })
 

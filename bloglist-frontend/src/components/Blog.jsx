@@ -26,12 +26,6 @@ const Blog = ({ blog, user, likeBlog, removeBlog }) => {
   const hideWhenDetails = { display: details ? 'none' : '' }
   const showWhenDetails = { display: details ? '' : 'none' }
 
-  // const style1 = { ...hideWhenDetails, ...blogStyle }
-
-  // const showMore = () => {
-  //   setDetails(true)
-  // }
-
   return(
     <div>
       <div style={{ ...hideWhenDetails, ...blogStyle }} className="notexpanded">
